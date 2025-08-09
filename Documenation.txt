@@ -1,0 +1,30 @@
+* More clear model for the to-do-list being created:
+
+1. Create two class one for the task and another class for the TODOLIST
+2. Class task should have the constructor that create the object for the contents
+   submitted in the form 
+   The form fields are task name , deadline , priority etc 
+
+3. TODOLIST should have all the logic to Delete , Add  , the task checkbox handler and so on 
+4. Use the reference model to model to communicate between the classes 
+
+
+* Design:
+
+1. Create two boxes one of the box has the form that shall be on the left hand side 
+   and another box on the right has the to do list rendered , in forms set the
+   provision of form validation 
+
+2. How does the rendering of the to do list look like? 
+
+  -> It should have the task name and check box by side 
+  -> There should be the priority queue that renders the task as per the priority 
+  -> Highest priority task is placed first in list for more emphasis 
+  -> when the dealine is reached the task name turns red 
+
+
+
+New ammendments: 1
+  -> I think we should have the initial rendering of the element  based on the dead line create the flag and append it to element itself  for this  and later we are work with the checkboxes
+  
+

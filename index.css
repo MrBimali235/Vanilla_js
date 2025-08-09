@@ -1,0 +1,140 @@
+.title-box {
+  border: 1px solid #ccc;
+  padding-left: 850px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Flex container to place items side by side */
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Form box - 25% width */
+.form {
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Remove or comment out this line to prevent forcing a minimum height */
+  /* min-height: 500px; */
+
+  /* Optional: remove overflow-y if no scrolling needed */
+  /* overflow-y: auto; */
+
+  background-color: #f0f8ff; /* Optional */
+}
+
+/* List box - 75% width */
+.list-box {
+  width: 75%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 500px;
+  background-color: #fff0f5; /* Optional */
+  overflow-y: auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 100px; /* Fixed label width */
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 1; /* Input takes remaining space */
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-box {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #2980b9; /* medium blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f618d; /* darker blue */
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* controls spacing between checkbox and text */
+}
+
+.task-item p {
+  margin: 0;
+}
+
+.task-text {
+  /* default styling */
+  color: red;
+  font-size: 16px;
+}
+
+.task-text.past-deadline {
+  color: red;
+}
+.checked {
+  color: green;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-btn svg {
+  stroke: #888;
+  transition: stroke 0.2s ease;
+}
+
+.delete-btn:hover svg {
+  stroke: red;
+}
+.clear-btn {
+  margin-left: calc(25% + 24px); /* aligns with the left edge of .list-box */
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #e60000;
+}

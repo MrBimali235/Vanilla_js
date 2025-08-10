@@ -5,7 +5,6 @@
   color: white;
 }
 
-/* Flex container to place items side by side */
 .content-container {
   display: flex;
   align-items: flex-start;
@@ -13,29 +12,21 @@
   gap: 20px;
 }
 
-/* Form box - 25% width */
 .form {
   width: 25%;
   border: 1px solid #ccc;
   padding: 20px;
   box-sizing: border-box;
-  /* Remove or comment out this line to prevent forcing a minimum height */
-  /* min-height: 500px; */
-
-  /* Optional: remove overflow-y if no scrolling needed */
-  /* overflow-y: auto; */
-
-  background-color: #f0f8ff; /* Optional */
+  background-color: #f0f8ff;
 }
 
-/* List box - 75% width */
 .list-box {
   width: 75%;
   border: 1px solid #ccc;
   padding: 20px;
   box-sizing: border-box;
   min-height: 500px;
-  background-color: #fff0f5; /* Optional */
+  background-color: #fff0f5;
   overflow-y: auto;
 }
 
@@ -46,12 +37,12 @@
 }
 
 .form-group label {
-  width: 100px; /* Fixed label width */
+  width: 100px;
   font-weight: bold;
 }
 
 .form-group input {
-  flex: 1; /* Input takes remaining space */
+  flex: 1;
   padding: 8px;
   font-size: 14px;
   box-sizing: border-box;
@@ -62,7 +53,7 @@
 }
 
 .btn {
-  background-color: #2980b9; /* medium blue */
+  background-color: #2980b9;
   color: white;
   border: none;
   cursor: pointer;
@@ -72,7 +63,7 @@
 }
 
 .btn:hover {
-  background-color: #1f618d; /* darker blue */
+  background-color: #1f618d;
 }
 
 .task-item {
@@ -87,7 +78,7 @@
 .task-left {
   display: flex;
   align-items: center;
-  gap: 10px; /* controls spacing between checkbox and text */
+  gap: 10px;
 }
 
 .task-item p {
@@ -95,7 +86,6 @@
 }
 
 .task-text {
-  /* default styling */
   color: red;
   font-size: 16px;
 }
@@ -123,7 +113,7 @@
   stroke: red;
 }
 .clear-btn {
-  margin-left: calc(25% + 24px); /* aligns with the left edge of .list-box */
+  margin-left: calc(25% + 24px);
   margin-top: 0px;
   padding: 8px 16px;
   background-color: #ff4d4d;

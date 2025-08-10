@@ -64,7 +64,7 @@ class TODO {
 
     const statusClass =
       pastDeadline && !isChecked ? "past-deadline" : "upcoming";
-    const checkboxDisabled = pastDeadline && !isChecked ? "disabled" : "";
+    const checkboxDisabled = pastDeadline ? "disabled" : "";
 
     const html = `
       <div class="task-item" data-task="${el.Task}" data-deadline="${
